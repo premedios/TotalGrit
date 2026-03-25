@@ -22,8 +22,9 @@ class WorkoutCard extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 28,
-                backgroundColor: color.withOpacity(0.2),
-                child: Icon(categoryIcon(workout.category), color: color, size: 28),
+                backgroundColor: color.withValues(alpha: 0.2),
+                child: Icon(categoryIcon(workout.category),
+                    color: color, size: 28),
               ),
               const SizedBox(width: 16),
               Expanded(
@@ -60,7 +61,7 @@ class WorkoutCard extends StatelessWidget {
                           padding: const EdgeInsets.symmetric(
                               horizontal: 8, vertical: 2),
                           decoration: BoxDecoration(
-                            color: color.withOpacity(0.15),
+                            color: color.withValues(alpha: 0.15),
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(
